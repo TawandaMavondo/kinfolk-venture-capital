@@ -28,7 +28,36 @@ h3 {
     color: #000000;
     letter-spacing: 0;
 }
-
+@mixin storyAndTeamBaseStyles {
+    margin-top: 100px;
+    div {
+        margin-bottom: 45%;
+        h1 {
+            margin-bottom: 100px;
+            &:after {
+                height: 10px;
+                width: 100px;
+                display: flex;
+                background: black;
+            }
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 21px;
+            margin-bottom: 40px;
+        }
+        p {
+            margin-bottom: 40px;
+            font-size: 21px;
+            letter-spacing: 0;
+            font-weight: normal;
+            line-height: 30px;
+        }
+        span {
+            display: block;
+        }
+    }
+}
 // Landing Page
 .navbar {
     display: flex;
@@ -65,37 +94,36 @@ h3 {
 
 // Story Page
 .the-story {
-    margin-top:100px;
-    div {
+    @include storyAndTeamBaseStyles();
 
-        margin-bottom: 45%;
-        h1 {
-            margin-bottom: 100px;
-            &:after {
-                height: 10px;
-                width: 100px;
-                display: flex;
-                background: black;
-            }
-        }
+}
+
+// Team Page
+.the-team{
+    @include storyAndTeamBaseStyles();
+    div{
+        margin-bottom: 5%;
+    }
+    .team-section{
+        margin-bottom: 20%;
         h3{
-            font-weight: bold;
-            font-size: 21px;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
         }
-        p {
-            margin-bottom: 40px;
-            font-size: 21px;
-            letter-spacing: 0;
-            font-weight: normal;
-            line-height: 30px;
-        }
-        span {
-            display: block;
-        }
+        // div:first-child{
+        //     height: 540px;
+        //     background-size: cover;
+        //     background-image: url('./img/JayFreeman.jpg');
+        // }
+        // div:last-child{
+        //     height: 540px;
+        //     background-size: cover;
+        //     background-image: url('./img/image\ \(1\).png');
+        // }
     }
 }
-.globe{
+
+
+.globe {
     position: absolute;
     bottom: 5%;
     right: 0;
@@ -104,7 +132,7 @@ h3 {
 
     // height: 20%;
 }
-footer{
+footer {
     height: 100px;
     text-align: center;
 }
@@ -115,12 +143,12 @@ footer{
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    .the-story{
-        div{
+    .the-story {
+        div {
             margin-bottom: 25%;
         }
     }
-    .globe{
+    .globe {
         bottom: 0;
         width: 21%;
     }
@@ -128,7 +156,7 @@ footer{
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    .navbar{
+    .navbar {
         height: 5vh;
     }
 }
