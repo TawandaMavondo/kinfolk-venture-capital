@@ -1,4 +1,5 @@
 body {
+  position: relative;
   font-family: "Playfair Display", serif;
   font-size: 21px;
   color: #000000;
@@ -28,7 +29,6 @@ h3 {
 }
 
 .navbar {
-  height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +67,7 @@ h3 {
 }
 
 .callout-section div a {
-  border-bottom: 1.5px solid #F67280;
+  border-bottom: 1.5px solid #f67280;
   color: black;
 }
 
@@ -80,6 +80,74 @@ h3 {
   bottom: 0;
   right: 0;
   width: 40%;
+}
+
+.the-story {
+  margin-top: 100px;
+}
+
+.the-story div {
+  margin-bottom: 45%;
+}
+
+.the-story div h1 {
+  margin-bottom: 100px;
+}
+
+.the-story div h1:after {
+  height: 10px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+}
+
+.the-story div h3 {
+  font-weight: bold;
+  font-size: 21px;
+  margin-bottom: 40px;
+}
+
+.the-story div p {
+  margin-bottom: 40px;
+  font-size: 21px;
+  letter-spacing: 0;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.the-story div span {
+  display: block;
+}
+
+.globe {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  width: 30%;
+  z-index: 1000;
+}
+
+footer {
+  height: 100px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .the-story div {
+    margin-bottom: 25%;
+  }
+  .globe {
+    bottom: 0;
+    width: 21%;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    height: 5vh;
+  }
 }
 
 @media (min-width: 1200px) {
