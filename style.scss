@@ -95,33 +95,41 @@ h3 {
 // Story Page
 .the-story {
     @include storyAndTeamBaseStyles();
-
 }
 
 // Team Page
-.the-team{
+.the-team {
     @include storyAndTeamBaseStyles();
-    div{
+    div {
         margin-bottom: 5%;
     }
-    .team-section{
+    .team-section {
         margin-bottom: 20%;
-        h3{
+        h3 {
             margin-bottom: 10px;
         }
-        // div:first-child{
-        //     height: 540px;
-        //     background-size: cover;
-        //     background-image: url('./img/JayFreeman.jpg');
-        // }
-        // div:last-child{
-        //     height: 540px;
-        //     background-size: cover;
-        //     background-image: url('./img/image\ \(1\).png');
-        // }
+        .expanded p{
+            font-weight: bold;
+        }
+        div {
+            .profile-image {
+                height: 540px;
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+        div:first-child {
+            .profile-image {
+                background-image: url("./img/JayFreeman.jpg");
+            }
+        }
+        div:last-child {
+            .profile-image {
+                background-image: url("./img/image\ \(1\).png");
+            }
+        }
     }
 }
-
 
 .globe {
     position: absolute;

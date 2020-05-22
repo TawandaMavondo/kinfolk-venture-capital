@@ -172,6 +172,24 @@ h3 {
   margin-bottom: 10px;
 }
 
+.the-team .team-section .expanded p {
+  font-weight: bold;
+}
+
+.the-team .team-section div .profile-image {
+  height: 540px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.the-team .team-section div:first-child .profile-image {
+  background-image: url("./img/JayFreeman.jpg");
+}
+
+.the-team .team-section div:last-child .profile-image {
+  background-image: url("./img/image (1).png");
+}
+
 .globe {
   position: absolute;
   bottom: 5%;
