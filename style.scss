@@ -9,6 +9,7 @@ body {
     color: #000000;
     letter-spacing: 0;
     line-height: 30px;
+    overflow-x: hidden;
 }
 h2 {
     font-family: "Playfair Display", serif;
@@ -63,6 +64,7 @@ h3 {
     display: flex;
     align-items: center;
     padding: 45px 50px;
+    z-index: 10000;
 }
 
 .callout-section {
@@ -130,10 +132,13 @@ h3 {
         }
     }
 }
+
 // Contact Page
 .contact {
     @include storyAndTeamBaseStyles();
+    overflow-x: hidden;
     div {
+        margin-bottom: auto;
         .head-text {
             font-size: 35px;
             margin-bottom: 25px;
@@ -142,8 +147,58 @@ h3 {
         .description {
             background: #f1f1f1;
             padding: 10px;
+            margin-bottom: 100px;
+            padding: 5%;
         }
-        margin-bottom: auto;
+        .dark {
+            padding-top: 12%;
+            padding-bottom: 25%;
+            width: 100%;
+            background: black;
+            color: white;
+            .description {
+                background: #111;
+                margin-bottom: auto;
+            }
+            h1 {
+                color: white;
+            }
+            .input-group{
+                background: black;
+            }
+            .form-control {
+                background: black;
+                color: white;
+                &::placeholder {
+                    color: white;
+                }
+            }
+        }
+        .input-group {
+            max-width: 87%;
+            height: calc(1.5em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        .form-control {
+            border-radius: 0;
+            border: none;
+            height: auto;
+            padding: 0;
+            &:focus{
+                box-shadow: none;
+                .input-group{
+                    box-shadow: lightskyblue;
+                }
+            }
+        }
     }
 }
 
@@ -165,7 +220,6 @@ h3 {
             color: #ffffff;
             letter-spacing: 0;
             margin: 30px auto;
-            
         }
     }
 }
@@ -179,9 +233,17 @@ h3 {
 
     // height: 20%;
 }
+.contact-footer{
+    background: black;
+    color: white;
+}
 footer {
     height: 100px;
     text-align: center;
+    p{
+        padding: 2% auto;
+    }
+    
 }
 
 // Media Quiries
@@ -206,17 +268,21 @@ footer {
     .contact {
         div {
             .description {
+                position: relative;
+                h1 {
+                    font-size: 50px;
+                    position: absolute;
+                    top: -12%;
+                }
                 width: 90%;
                 margin-left: auto;
             }
         }
     }
-   
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    
     .callout-section {
         .world {
             width: auto;
