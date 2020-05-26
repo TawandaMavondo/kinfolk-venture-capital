@@ -108,7 +108,7 @@ h3 {
         h3 {
             margin-bottom: 10px;
         }
-        .expanded p{
+        .expanded p {
             font-weight: bold;
         }
         div {
@@ -127,6 +127,45 @@ h3 {
             .profile-image {
                 background-image: url("./img/image\ \(1\).png");
             }
+        }
+    }
+}
+// Contact Page
+.contact {
+    @include storyAndTeamBaseStyles();
+    div {
+        .head-text {
+            font-size: 35px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        .description {
+            background: #f1f1f1;
+            padding: 10px;
+        }
+        margin-bottom: auto;
+    }
+}
+
+#nav-modal {
+    background: black;
+    padding: 0;
+    .uk-modal-dialog {
+        width: 100%;
+        height: 100%;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a {
+            color: white;
+            display: block;
+            font-size: 44px;
+            color: #ffffff;
+            letter-spacing: 0;
+            margin: 30px auto;
+            
         }
     }
 }
@@ -164,13 +203,20 @@ footer {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    .navbar {
-        height: 5vh;
+    .contact {
+        div {
+            .description {
+                width: 90%;
+                margin-left: auto;
+            }
+        }
     }
+   
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+    
     .callout-section {
         .world {
             width: auto;
