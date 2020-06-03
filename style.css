@@ -380,6 +380,10 @@ footer p {
   padding: 2% auto;
 }
 
+.the-story, .contact, .the-team {
+  padding-top: 100px;
+}
+
 @media (min-width: 768px) {
   .the-story div {
     margin-bottom: 25%;
