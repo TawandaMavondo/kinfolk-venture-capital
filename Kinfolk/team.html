@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;669;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./lib/uikit-3.3.1/css/uikit.min.css">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;669;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="style.css">
+    <title>KinFolk</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-light bg-white fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="./img/KinfolkLogoArtboard-b.svg" width="50" height="50" alt="">
+        </a>
+        <a href="#nav-modal" uk-toggle id="nav-icon2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+    </nav>
+
+
+
+    <section class="the-team">
+        <div class="container">
+            <h1 class="text-center">The Team</h1>
+            <div class="row team-section">
+                <div class="col-md-6">
+                    <a data-toggle="collapse" href="#jay" aria-expanded="false" role="button" aria-controls="jay">
+                        <!-- <img src="./img/JayFreeman.jpg" class="img-fluid mb-3" alt=""> -->
+                        <div class="profile-image">
+
+                        </div>
+                    </a>
+                    <div>
+                        <h3>Jay Freeman</h3>
+                        <p>Founder & Managing Partner</p>
+                    </div>
+                    <div class="expanded collapse" id='jay'>
+                        <p> Over the past 10 years, Jay has worked in the technology and venture ecosystem, with a focus
+                            on helping B2B, Consumer, Commerce, Fintech, Legal Tech, PAAS startups and large
+                            enterprises, to enhance product innovation, software development, and digital growth.
+                            Recently, Jay led Global Product Strategy and Management for PayPal across MNAs managing
+                            customer experiences and mobile growth.
+                        </p>
+                        <p>
+                            Jay Freeman is also the Founder & CEO of Bourn.io, an AI-powered visual commerce platform
+                            that lets consumers buy whatever they see.
+                        </p>
+                        <p>
+                            Additionally, he previously founded TinkerGrowth, a venture studio of product architects,
+                            designers, and engineers from Google, Nike, Uber, and Spotify. The collective is passionate
+                            about helping founders drive their mission, create meaningful product experiences, build
+                            sustainable businesses, and gain access to capital.
+                        </p>
+                        <p>
+                            As a leader, Jay applies a strategic approach to product, design, technology, and growth. In
+                            his spare time, Jay gives back to his community as a Techstars mentor and Republic Venture
+                            Partner, where he provides guidance and support to new entrepreneurs and startups.
+                        </p>
+                        <p>
+                            Originally from Boston, Massachusetts, Jay received his Bachelor of Arts in Business and
+                            Sociology from Brandeis University.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a data-toggle="collapse" href="#tony" aria-expanded="false" role="button" aria-controls="tony">
+                        <!-- <img src="./img/JayFreeman.jpg" class="img-fluid mb-3" alt=""> -->
+                        <div class="profile-image">
+
+                        </div>
+                    </a>
+                    <div>
+                        <h3>Tony Gonzalez</h3>
+                        <p>Founder & Managing Partner</p>
+                    </div>
+                    <div class="expanded collapse" id='tony'>
+                        <p> Before founding Kinfolk Ventures, Tony held various roles at PayPal, Twitter, and LinkedIn.
+                        </p>
+                        <p>
+                            On the side, he launched two companies, both were acquired by Google.
+                        </p>
+                        <p>
+                            Having worked inside and outside of the system, Tony brings a unique perspective to VC and
+                            is
+                            eager to help African founders build companies that scale.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+     <!-- Modal Nav-->
+
+   <div id="nav-modal" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+              <a href="./story.html">Story</a>
+              <a href="./team.html">Team</a>
+              <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+
+
+
+    <img class="globe" src="./img/world.svg" alt="">
+    <footer>
+        <p>Copyright 2020 | All Rights Reserved</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./lib/uikit-3.3.1/js/uikit.min.js"></script>
+    <script src="./lib/uikit-3.3.1/js/uikit-icons.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
