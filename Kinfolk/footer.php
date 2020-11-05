@@ -11,6 +11,17 @@
 ?>
 <footer>
     <p>Copyright <?php echo date('Y');?> | All Rights Reserved</p>
+    <div class="text-dark">
+            <a href="#" class="icon">
+                <i class="fa fa-instagram text-dark" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="icon">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+        </div>
 </footer>
 <?php
     endif;

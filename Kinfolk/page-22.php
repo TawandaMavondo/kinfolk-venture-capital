@@ -1,7 +1,7 @@
 <?php get_header(  )?>
 
 <section class="the-story">
-        <div class="container">
+        <div class="container text-dark">
         <?php 
     if ( have_posts() ) {
       while ( have_posts() ) {

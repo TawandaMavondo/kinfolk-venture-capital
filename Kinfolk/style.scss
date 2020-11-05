@@ -1,3 +1,20 @@
+/*
+Theme Name: Kinfolk Venture Capital
+Theme URI: http://kinfolk.vc/
+Author: Sprout Coding (Developer:Tawanda Mavondo)
+Author URI: http://sproutcoding.org/
+Description: A wordpres theme developed by Sprout Coding for Kinfolk Venture Capital
+Tags: Minimalistic
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Kinfolk
+This theme, like WordPress, is licensed under the GPL.
+*/
+
 // Base Styles of the Website fonts and colors
 $backgroundColor: #fff;
 $fontColor: #000;
@@ -30,7 +47,7 @@ h3 {
     letter-spacing: 0;
 }
 @mixin storyAndTeamBaseStyles {
-    margin-top: 100px;
+    margin-top: 10px;
     div {
         margin-bottom: 45%;
         h1 {
@@ -163,7 +180,7 @@ h3 {
             h1 {
                 color: white;
             }
-            .input-group{
+            .input-group {
                 background: black;
             }
             .form-control {
@@ -192,9 +209,9 @@ h3 {
             border: none;
             height: auto;
             padding: 0;
-            &:focus{
+            &:focus {
                 box-shadow: none;
-                .input-group{
+                .input-group {
                     box-shadow: lightskyblue;
                 }
             }
@@ -221,6 +238,15 @@ h3 {
             letter-spacing: 0;
             margin: 30px auto;
         }
+        .nav-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon {
+                color: white;
+                padding: 0 12px;
+            }
+        }
     }
 }
 
@@ -233,19 +259,33 @@ h3 {
 
     // height: 20%;
 }
-.contact-footer{
+.contact-footer {
     background: black;
     color: white;
 }
 footer {
     height: 100px;
     text-align: center;
-    p{
+    p {
         padding: 2% auto;
     }
-    
+
+    div {
+        .icon {
+            padding: 0 7px;
+            i {
+                font-size: 30px;
+                color: black;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
 }
-.the-story,.contact,.the-team{
+.the-story,
+.contact,
+.the-team {
     padding-top: 100px;
 }
 
@@ -296,7 +336,7 @@ footer {
 /* Icon 2 */
 
 #nav-icon2 {
-    width: 50px;
+    width: 30px;
     position: relative;
     height: 50px;
 }
@@ -304,7 +344,7 @@ footer {
 #nav-icon2 span {
     display: block;
     position: absolute;
-    height: 6px;
+    height: 4px;
     width: 50%;
     background: black;
     opacity: 1;
@@ -320,12 +360,12 @@ footer {
 
 #nav-icon2 span:nth-child(even) {
     left: 50%;
-    border-radius: 0 9px 9px 0;
+    // border-radius: 0 9px 9px 0;
 }
 
 #nav-icon2 span:nth-child(odd) {
     left: 0px;
-    border-radius: 9px 0 0 9px;
+    // border-radius: 9px 0 0 9px;
 }
 
 #nav-icon2 span:nth-child(1),
@@ -335,12 +375,12 @@ footer {
 
 #nav-icon2 span:nth-child(3),
 #nav-icon2 span:nth-child(4) {
-    top: 18px;
+    top: 12px;
 }
 
 #nav-icon2 span:nth-child(5),
 #nav-icon2 span:nth-child(6) {
-    top: 36px;
+    top: 24px;
 }
 
 #nav-icon2.open span:nth-child(1),
@@ -360,7 +400,7 @@ footer {
 }
 
 #nav-icon2.open span:nth-child(1) {
-    left: 5px;
+    left: 2.2px;
     top: 7px;
 }
 
@@ -380,11 +420,11 @@ footer {
 }
 
 #nav-icon2.open span:nth-child(5) {
-    left: 5px;
-    top: 29px;
+    left: 2.2px;
+    top: 18px;
 }
 
 #nav-icon2.open span:nth-child(6) {
     left: calc(50% - 5px);
-    top: 29px;
+    top: 18px;
 }
