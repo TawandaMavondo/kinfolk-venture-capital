@@ -11,26 +11,12 @@
 ?>
 <footer>
     <p>Copyright <?php echo date('Y');?> | All Rights Reserved</p>
-    <div class="text-dark">
-            <a href="#" class="icon">
-                <i class="fa fa-instagram text-dark" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="icon">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="icon">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-        </div>
 </footer>
 <?php
     endif;
 ?>
 
          
-
-
-
 
 <?php wp_footer()?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

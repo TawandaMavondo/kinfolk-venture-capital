@@ -13,15 +13,21 @@
               );?>
 
            <div class="text-dark nav-icons">
-               <a href="#" class="icon">
+
+               <?php if ( have_rows( 'social_icons' ) ) : ?>
+               <?php while ( have_rows( 'social_icons' ) ) : the_row(); ?>
+                
+               <a href="<?php the_sub_field( 'instagram' ); ?>" class="icon">
                    <i class="fa fa-instagram " aria-hidden="true"></i>
                </a>
-               <a href="#" class="icon">
+               <a href="<?php the_sub_field( 'linkedin' ); ?>" class="icon">
                    <i class="fa fa-linkedin" aria-hidden="true"></i>
                </a>
-               <a href="#" class="icon">
+               <a href="<?php the_sub_field( 'twitter' ); ?>" class="icon">
                    <i class="fa fa-twitter" aria-hidden="true"></i>
                </a>
+               <?php endwhile; ?>
+               <?php endif; ?>
            </div>
        </div>
    </div>
